@@ -1,0 +1,116 @@
+#form {
+    display: flex;
+    width: 22%;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+
+    margin-left:200px;
+    margin-top:50px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+h1{
+    text-align: center;
+    padding-right: 50px;
+}
+
+table{
+    display:absolute;
+    justify-content: ;
+}
+
+#fdiv {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#sdiv {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#tdiv {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#fourDiv {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+#fiveDiv {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#sixDiv {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#buttons {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+#clear {
+    display: flex;
+    width: 100px;
+    border-radius: 5px;
+    background: white;
+    color: red;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid red;
+    
+}
+
+#clear:hover{
+    background-color: gray;
+}
+
+#Submit {
+    display: flex;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px solid green;
+    background: while;
+    color: green;
+    justify-content: center;
+    padding: 10px;
+    margin-left:25px;
+    cursor:pointer;
+}
+
+#Submit:hover{
+    background-color: green;
+    color:white;
+}
+
+.label{
+    width: 50px;;
+}

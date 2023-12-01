@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Student Management System</h1>
+
+    <form id="form">
+        <div id="fdiv" >
+            <lable>F.Name</lable>
+            <input id="fname" placeholder="enter fname"/>
+        </div>
+        <div id="sdiv">
+            <lable class="label" >Phone</lable>
+            <input id="phone" placeholder="enter phone" />
+        </div>
+        <div id="tdiv">
+            <lable class="label" >Gender</lable>
+            <input id="gender" placeholder="enter Gender" />
+        </div>
+        <div id="fourDiv">
+            <lable class="label" >L.Name</lable>
+            <input id="lname" placeholder="enter Lname"/>
+        </div>
+        <div id="fiveDiv">
+            <lable class="label" >Dob</lable>
+            <input id="dob" type="date" placeholder="enter Dob" />
+        </div>
+        <div id= "sixDiv">
+            <lable class="label" >Address</lable>
+            <input id="address" placeholder="Address"/>
+        </div>
+
+        <div id="buttons">
+            <div id="clear">Clear</div>
+            <button id="Submit" >Submit</button>
+        </div>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>StudentId</th>
+                <th>Name</th>
+                <th>LName</th>
+                <th>Phone</th>
+                <th>Dob</th>
+                <th>Gender</th>
+                <th>Address</th>
+                
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+</body>
+<script src="index.js"></script>
+</html>
