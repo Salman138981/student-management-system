@@ -85,6 +85,8 @@ public class StudentServiceImpl implements StudentService {
 			 Student stud = st.get();
 			  stud.setAddress(studentDto.getAddress());
 			  stud.setPhoneNumber(studentDto.getPhoneNumber());
+			  
+			  studentRepository.save(stud);
 			  return stud;
 			    
 		}else {
