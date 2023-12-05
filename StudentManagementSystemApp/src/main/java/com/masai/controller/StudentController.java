@@ -8,9 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -51,10 +51,10 @@ public class StudentController {
 		return new ResponseEntity<>(studentList,HttpStatus.OK);
 	}
 	
-	@PatchMapping("/students/{rollNo}")
-	public ResponseEntity<Student> updateStudent(@RequestBody @Valid StudentDto studentdto,@PathVariable("rollNo") Integer rollno){
+	@PutMapping("/students/{rollNo}")
+	public ResponseEntity<Student> updateStudent(@RequestBody @Valid StudentDto studentdto,@PathVariable("rollNo") Integer rollNo){
 		 
-	 Student stud = studentService.updateStudentDetails(studentdto, rollno);
+	 Student stud = studentService.updateStudentDetails(studentdto, rollNo);
 		
 		return new ResponseEntity<>(stud,HttpStatus.OK);
 	}
